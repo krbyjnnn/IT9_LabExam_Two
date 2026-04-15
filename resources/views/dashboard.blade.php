@@ -12,23 +12,26 @@
                     <h3 class="text-lg font-medium text-gray-900 dark:text-gray-100 mb-4">
                         Welcome, {{ Auth::user()->name }}!
                     </h3>
-                    
+
                     <hr class="mb-6 border-gray-200 dark:border-gray-700">
 
-                    <div class="space-y-4">
-                        <div class="p-4 bg-black-100 dark:bg-gray-700 rounded-lg">
-                            <a href="/rices" class="text-blue-600 dark:text-blue-400 font-bold text-lg">🌾 Rice Menu</a>
-                            <p class="text-gray-600 dark:text-gray-400">Manage your inventory and pricing here.</p>
+                    <div style="display: flex; gap: 1.5rem;">
+                        <div style="flex: 1; padding: 2rem; background-color: #374151; border-radius: 0.75rem; display: flex; flex-direction: column; align-items: center; text-align: center;">
+                            <span style="font-size: 2.5rem; margin-bottom: 0.75rem;">🌾</span>
+                            <a href="/rices" style="color: #93c5fd; font-weight: 700; font-size: 1.1rem; margin-bottom: 0.5rem; text-decoration: none;">Rice Menu</a>
+                            <p style="color: #9ca3af; font-size: 0.875rem;">Manage your inventory and pricing here.</p>
                         </div>
 
-                        <div class="p-4 bg-gray-100 dark:bg-gray-700 rounded-lg">
-                            <a href="/orders/create" class="text-green-600 dark:text-green-400 font-bold text-lg">🛒 New Order</a>
-                            <p class="text-gray-600 dark:text-gray-400">Click here to place a new customer order.</p>
+                        <div style="flex: 1; padding: 2rem; background-color: #374151; border-radius: 0.75rem; display: flex; flex-direction: column; align-items: center; text-align: center;">
+                            <span style="font-size: 2.5rem; margin-bottom: 0.75rem;">🛒</span>
+                            <a href="/orders/create" style="color: #86efac; font-weight: 700; font-size: 1.1rem; margin-bottom: 0.5rem; text-decoration: none;">New Order</a>
+                            <p style="color: #9ca3af; font-size: 0.875rem;">Click here to place a new customer order.</p>
                         </div>
 
-                        <div class="p-4 bg-gray-100 dark:bg-gray-700 rounded-lg">
-                            <a href="/payments" class="text-yellow-600 dark:text-yellow-400 font-bold text-lg">💰 Payments</a>
-                            <p class="text-gray-600 dark:text-gray-400">Track and update payment statuses.</p>
+                        <div style="flex: 1; padding: 2rem; background-color: #374151; border-radius: 0.75rem; display: flex; flex-direction: column; align-items: center; text-align: center;">
+                            <span style="font-size: 2.5rem; margin-bottom: 0.75rem;">💰</span>
+                            <a href="/payments" style="color: #fcd34d; font-weight: 700; font-size: 1.1rem; margin-bottom: 0.5rem; text-decoration: none;">Payments</a>
+                            <p style="color: #9ca3af; font-size: 0.875rem;">Track and update payment statuses.</p>
                         </div>
                     </div>
                 </div>

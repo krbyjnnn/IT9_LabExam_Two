@@ -1,118 +1,114 @@
-/* public/css/rice-style.css */
-
-/* --- Main Layout --- */
+/* Main Layout*/
 #rice-container {
     padding: 2rem;
-    max-width: 80rem; /* Matches max-w-7xl */
-    margin: 3rem auto; /* Vertical spacing and centering */
-    font-family: 'Figtree', sans-serif; /* Standard Laravel font */
+    max-width: 80rem;
+    margin: 3rem auto;
+    font-family: 'Figtree', sans-serif;
 }
 
-/* Page Title (matches large text) */
 #rice-container h1 {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 2rem;
-    color: #e5e7eb; /* Matches dark-text-gray-100 */
+    color: #e5e7eb;
 }
 
-/* Slot/Header text (matches smaller gray headers) */
 #rice-container h2 {
-    color: #9ca3af; /* Matches dark-text-gray-400 */
+    color: #9ca3af;
 }
 
-/* Horizontal line */
 #rice-container hr {
-    border-color: #374151; /* Matches dark-border-gray-700 */
+    border-color: #374151;
     margin: 3rem 0;
 }
 
-/* --- Form Styling --- */
+/* Form Styling */
 #rice-container form {
-    background-color: #1f2937; /* Matches dark-bg-gray-800 - The main card color */
+    background-color: #1f2937;
     padding: 2rem;
-    border-radius: 0.5rem; /* rounded-lg */
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); /* Standard shadow */
-    max-width: 40rem; /* Keeps form from being too wide */
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    max-width: 40rem;
     margin-bottom: 3rem;
 }
 
-/* Individual form grouping */
 #rice-container form > div {
     margin-bottom: 1.5rem;
 }
 
-/* Form Labels (gray text) */
 #rice-container label {
     display: block;
     margin-bottom: 0.5rem;
-    font-size: 0.875rem; /* text-sm */
+    font-size: 0.875rem;
     font-weight: 500;
-    color: #d1d5db; /* Matches dark-text-gray-300 */
+    color: #d1d5db;
 }
 
-/* Form Inputs (Matches the exact dark input look) */
 #rice-container input[type="text"],
 #rice-container input[type="number"],
 #rice-container textarea {
     width: 100%;
     padding: 0.75rem;
-    background-color: #111827; /* Matches dark-bg-gray-900 - The main background color */
-    border: 1px solid #374151; /* Matches dark-border-gray-700 */
-    border-radius: 0.375rem; /* rounded-md */
-    color: #e5e7eb; /* Matches text-gray-100 */
-    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06); /* Inner shadow for depth */
+    background-color: #111827;
+    border: 1px solid #374151;
+    border-radius: 0.375rem;
+    color: #e5e7eb;
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
 }
 
-/* Standard focus ring effect */
 #rice-container input:focus,
 #rice-container textarea:focus {
     outline: none;
-    border-color: #6366f1; /* Indigo focus */
-    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.5); /* Indigo glow */
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.5);
 }
 
-/* --- Table Styling --- */
+/* Table Styling */
 #rice-container table {
     width: 100%;
     border-collapse: collapse;
-    background-color: #1f2937; /* dark-bg-gray-800 */
-    border-radius: 0.5rem; /* rounded-lg */
-    overflow: hidden; /* Ensures rounded corners show */
-    border: 1px solid #374151; /* dark-border-gray-700 */
+    background-color: #1f2937;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    border: 1px solid #374151;
 }
 
-/* Table headers */
 #rice-container th {
-    background-color: #111827; /* dark-bg-gray-900 (slightly darker than rows) */
-    color: #d1d5db; /* dark-text-gray-300 */
+    background-color: #111827;
+    color: #9ca3af;
     text-align: left;
-    padding: 1rem;
-    font-size: 0.75rem; /* text-xs */
+    padding: 0.75rem 1rem;
+    font-size: 0.7rem;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.07em;
     font-weight: 600;
 }
 
-/* Table cells */
+/* Reduced padding, added vertical-align and font-size */
 #rice-container td {
-    padding: 1rem;
-    border-bottom: 1px solid #374151; /* dark-border-gray-700 */
-    color: #e5e7eb; /* dark-text-gray-100 */
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #374151;
+    color: #e5e7eb;
+    font-size: 0.875rem;
+    vertical-align: middle;
 }
 
-/* Row hover effect (subtle lighter gray) */
-#rice-container tr:hover {
-    background-color: #2e3b4e;
+/* Removes border on last row */
+#rice-container tr:last-child td {
+    border-bottom: none;
 }
 
-/* --- Button Styling --- */
+#rice-container tr:hover td {
+    background-color: #263040;
+}
+
+/* Submit button */
 #rice-container button[type="submit"] {
-    background-color: #e5e7eb; /* dark-bg-gray-100 (Matches the "Log in" button style) */
-    color: #111827; /* dark-text-gray-900 */
+    background-color: #e5e7eb;
+    color: #111827;
     padding: 0.75rem 1.5rem;
     border: none;
-    border-radius: 0.375rem; /* rounded-md */
+    border-radius: 0.375rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -121,35 +117,49 @@
 }
 
 #rice-container button[type="submit"]:hover {
-    background-color: #ffffff; /* Brighter on hover */
+    background-color: #ffffff;
 }
 
-/* Inline delete button (keep it subtle red) */
+/* Table border box fix */
+#rice-container table form {
+    display: contents;
+}
+
 #rice-container table form button {
     background: none;
     border: none;
-    color: #ef4444; /* text-red-500 */
+    color: #f87171;
     padding: 0;
     cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 500;
 }
 
 #rice-container table form button:hover {
-    color: #b91c1c; /* text-red-700 */
+    color: #ef4444;
     text-decoration: underline;
 }
 
-/* Edit link styling (matches typical text links) */
+/* Action Cell (For Edit and Delete Buttons) */
+#rice-container .action-cell {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 #rice-container table a {
-    color: #d1d5db; /* dark-text-gray-300 */
+    color: #93c5fd;
     text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 500;
 }
 
 #rice-container table a:hover {
-    color: #ffffff;
+    color: #bfdbfe;
     text-decoration: underline;
 }
 
-/* --- Edit Rice Specific Styles --- */
+/* Edit Rice */
 #rice-edit-container {
     display: flex;
     flex-direction: column;
@@ -159,7 +169,7 @@
 }
 
 .edit-tab {
-    background-color: #374151; /* dark-border-gray-700 */
+    background-color: #374151;
     color: #e5e7eb;
     padding: 0.5rem 1.5rem;
     border-radius: 0.5rem 0.5rem 0 0;
@@ -168,7 +178,7 @@
 }
 
 .edit-box {
-    background-color: #1f2937; /* dark-bg-gray-800 */
+    background-color: #1f2937;
     padding: 2.5rem;
     border-radius: 0 0 0.75rem 0.75rem;
     width: 100%;
@@ -177,7 +187,6 @@
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
 }
 
-/* Reusing your form styles for consistency */
 .edit-box .form-group {
     margin-bottom: 1.5rem;
 }
@@ -189,17 +198,16 @@
     font-size: 0.875rem;
 }
 
-.edit-box input, 
+.edit-box input,
 .edit-box textarea {
     width: 100%;
-    background-color: #111827; /* dark-bg-gray-900 */
+    background-color: #111827;
     border: 1px solid #4b5563;
     border-radius: 0.375rem;
     padding: 0.75rem;
     color: #e5e7eb;
 }
 
-/* Button Styling */
 .button-group {
     display: flex;
     justify-content: space-between;

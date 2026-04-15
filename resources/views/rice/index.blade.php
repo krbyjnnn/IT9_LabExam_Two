@@ -52,12 +52,12 @@
                     <tr>
                         <td>{{ $item->id }}</td>
                         <td>{{ $item->rice_name }}</td>
-                        <td>{{ $item->price_per_kg }}</td>
-                        <td>{{ $item->stock_quantity }}</td>
+                        <td>₱{{ number_format($item->price_per_kg, 2) }}</td>
+                        <td>{{ $item->stock_quantity }} kg</td>
                         <td>{{ $item->description }}</td>
-                        <td>
+                        <td class="action-cell">
                             <a href="/rices/{{ $item->id }}/edit">Edit</a>
-                            <form action="/rices/{{ $item->id }}" method="POST" style="display:inline;">
+                            <form action="/rices/{{ $item->id }}" method="POST" onsubmit="return confirm('Delete this?')">
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit">Delete</button>
