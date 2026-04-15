@@ -1,0 +1,162 @@
+/* --- Main Container --- */
+#order-container {
+    padding: 2rem;
+    max-width: 80rem;
+    margin: 0 auto;
+    font-family: 'Figtree', sans-serif;
+}
+
+/* --- Action Bar (Add New Order link) --- */
+.action-bar {
+    margin-bottom: 2rem;
+}
+
+.add-button {
+    background-color: #e5e7eb; /* Light gray button like Laravel default */
+    color: #111827;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.375rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    transition: background-color 0.2s;
+}
+
+.add-button:hover {
+    background-color: #ffffff;
+}
+
+/* --- Table Styling (Matching the Rice Menu style) --- */
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1f2937; /* dark-bg-gray-800 */
+    border-radius: 0.5rem;
+    overflow: hidden;
+    border: 1px solid #374151;
+}
+
+.order-table th {
+    background-color: #111827; /* dark-bg-gray-900 */
+    color: #9ca3af; /* dark-text-gray-400 */
+    text-align: left;
+    padding: 1rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid #374151;
+}
+
+.order-table td {
+    padding: 1rem;
+    color: #e5e7eb; /* dark-text-gray-100 */
+    border-bottom: 1px solid #374151;
+}
+
+.order-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Subtle row hover effect */
+.order-table tr:hover {
+    background-color: #2d3748;
+}
+
+/* Rice Type "Badge" style (optional) */
+.order-table td:nth-child(3) {
+    color: #10b981; /* Greenish text to signify 'Rice' */
+    font-weight: 500;
+}
+
+/* --- Create Order Form Styling --- */
+#create-order-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    font-family: 'Figtree', sans-serif;
+}
+
+.form-card {
+    background-color: #1f2937; /* dark-bg-gray-800 */
+    padding: 2.5rem;
+    border-radius: 0.75rem;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #374151;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+.form-card h1 {
+    color: #e5e7eb;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    border-bottom: 1px solid #374151;
+    padding-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    color: #9ca3af;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input, 
+.form-group select {
+    width: 100%;
+    background-color: #111827; /* dark-bg-gray-900 */
+    border: 1px solid #374151;
+    border-radius: 0.375rem;
+    padding: 0.75rem;
+    color: #e5e7eb;
+    outline: none;
+}
+
+.form-group input:focus, 
+.form-group select:focus {
+    border-color: #6366f1; /* Indigo focus color */
+}
+
+/* --- Buttons --- */
+.button-group {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.submit-btn {
+    background-color: #e5e7eb;
+    color: #111827;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    transition: all 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #ffffff;
+    transform: translateY(-1px);
+}
+
+.cancel-link {
+    color: #9ca3af;
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+
+.cancel-link:hover {
+    color: #ef4444; /* Turns red on hover */
+    text-decoration: underline;
+}

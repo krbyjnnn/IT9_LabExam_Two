@@ -1,0 +1,235 @@
+/* public/css/rice-style.css */
+
+/* --- Main Layout --- */
+#rice-container {
+    padding: 2rem;
+    max-width: 80rem; /* Matches max-w-7xl */
+    margin: 3rem auto; /* Vertical spacing and centering */
+    font-family: 'Figtree', sans-serif; /* Standard Laravel font */
+}
+
+/* Page Title (matches large text) */
+#rice-container h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #e5e7eb; /* Matches dark-text-gray-100 */
+}
+
+/* Slot/Header text (matches smaller gray headers) */
+#rice-container h2 {
+    color: #9ca3af; /* Matches dark-text-gray-400 */
+}
+
+/* Horizontal line */
+#rice-container hr {
+    border-color: #374151; /* Matches dark-border-gray-700 */
+    margin: 3rem 0;
+}
+
+/* --- Form Styling --- */
+#rice-container form {
+    background-color: #1f2937; /* Matches dark-bg-gray-800 - The main card color */
+    padding: 2rem;
+    border-radius: 0.5rem; /* rounded-lg */
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); /* Standard shadow */
+    max-width: 40rem; /* Keeps form from being too wide */
+    margin-bottom: 3rem;
+}
+
+/* Individual form grouping */
+#rice-container form > div {
+    margin-bottom: 1.5rem;
+}
+
+/* Form Labels (gray text) */
+#rice-container label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 500;
+    color: #d1d5db; /* Matches dark-text-gray-300 */
+}
+
+/* Form Inputs (Matches the exact dark input look) */
+#rice-container input[type="text"],
+#rice-container input[type="number"],
+#rice-container textarea {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #111827; /* Matches dark-bg-gray-900 - The main background color */
+    border: 1px solid #374151; /* Matches dark-border-gray-700 */
+    border-radius: 0.375rem; /* rounded-md */
+    color: #e5e7eb; /* Matches text-gray-100 */
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06); /* Inner shadow for depth */
+}
+
+/* Standard focus ring effect */
+#rice-container input:focus,
+#rice-container textarea:focus {
+    outline: none;
+    border-color: #6366f1; /* Indigo focus */
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.5); /* Indigo glow */
+}
+
+/* --- Table Styling --- */
+#rice-container table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1f2937; /* dark-bg-gray-800 */
+    border-radius: 0.5rem; /* rounded-lg */
+    overflow: hidden; /* Ensures rounded corners show */
+    border: 1px solid #374151; /* dark-border-gray-700 */
+}
+
+/* Table headers */
+#rice-container th {
+    background-color: #111827; /* dark-bg-gray-900 (slightly darker than rows) */
+    color: #d1d5db; /* dark-text-gray-300 */
+    text-align: left;
+    padding: 1rem;
+    font-size: 0.75rem; /* text-xs */
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+}
+
+/* Table cells */
+#rice-container td {
+    padding: 1rem;
+    border-bottom: 1px solid #374151; /* dark-border-gray-700 */
+    color: #e5e7eb; /* dark-text-gray-100 */
+}
+
+/* Row hover effect (subtle lighter gray) */
+#rice-container tr:hover {
+    background-color: #2e3b4e;
+}
+
+/* --- Button Styling --- */
+#rice-container button[type="submit"] {
+    background-color: #e5e7eb; /* dark-bg-gray-100 (Matches the "Log in" button style) */
+    color: #111827; /* dark-text-gray-900 */
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.375rem; /* rounded-md */
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#rice-container button[type="submit"]:hover {
+    background-color: #ffffff; /* Brighter on hover */
+}
+
+/* Inline delete button (keep it subtle red) */
+#rice-container table form button {
+    background: none;
+    border: none;
+    color: #ef4444; /* text-red-500 */
+    padding: 0;
+    cursor: pointer;
+}
+
+#rice-container table form button:hover {
+    color: #b91c1c; /* text-red-700 */
+    text-decoration: underline;
+}
+
+/* Edit link styling (matches typical text links) */
+#rice-container table a {
+    color: #d1d5db; /* dark-text-gray-300 */
+    text-decoration: none;
+}
+
+#rice-container table a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* --- Edit Rice Specific Styles --- */
+#rice-edit-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+    font-family: 'Figtree', sans-serif;
+}
+
+.edit-tab {
+    background-color: #374151; /* dark-border-gray-700 */
+    color: #e5e7eb;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.edit-box {
+    background-color: #1f2937; /* dark-bg-gray-800 */
+    padding: 2.5rem;
+    border-radius: 0 0 0.75rem 0.75rem;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #374151;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+}
+
+/* Reusing your form styles for consistency */
+.edit-box .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.edit-box label {
+    display: block;
+    color: #9ca3af;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.edit-box input, 
+.edit-box textarea {
+    width: 100%;
+    background-color: #111827; /* dark-bg-gray-900 */
+    border: 1px solid #4b5563;
+    border-radius: 0.375rem;
+    padding: 0.75rem;
+    color: #e5e7eb;
+}
+
+/* Button Styling */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.update-btn {
+    background-color: #e5e7eb;
+    color: #111827;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+
+.update-btn:hover {
+    background-color: #ffffff;
+}
+
+.cancel-link {
+    color: #9ca3af;
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+
+.cancel-link:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
